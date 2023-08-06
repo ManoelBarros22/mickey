@@ -1,0 +1,29 @@
+.images {
+  margin-top: 400px;
+  margin-bottom: 50px;
+  padding: 0vw 4vw;
+  &__lista {
+    display: flex;
+    gap: 10px;
+
+    flex-wrap: nowrap;
+   
+   
+  }
+  &__item {
+    
+    img {
+      
+      border-radius: 10px;
+      height: 380px; 
+      width: 400px;  
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  
+  }
+}

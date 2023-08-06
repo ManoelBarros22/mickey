@@ -1,0 +1,289 @@
+.header {
+  padding: 1vw 6vw;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(188, 218, 244, 0.4);
+}
+.header__container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1024px) {
+  .header__image img {
+    width: 500px;
+  }
+}
+.header__nav__lista {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.header__nav__lista a {
+  color: #bcdaf4;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header__nav__lista a:hover {
+  color: #e8f2fb;
+}
+
+.hero {
+  background: linear-gradient(to left, transparent 45%, #194266 91%), no-repeat url(/src/images/disney.jpg);
+  background-size: cover;
+  padding: 2vw;
+  position: relative;
+  height: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 280px) {
+  .hero {
+    background: linear-gradient(to bottom, transparent -45%, #194266 100%), no-repeat url(src/imsges/disney.jpg);
+    background-size: cover;
+    padding: 2vw;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+  }
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 575px) {
+  .hero__container {
+    margin-top: -20px;
+    margin-bottom: 100px;
+  }
+}
+.hero__image {
+  max-width: 100%;
+  width: 364px;
+  display: block;
+}
+@media only screen and (max-width: 575px) {
+  .hero__image {
+    display: none;
+  }
+}
+.hero__mobile {
+  display: none;
+}
+@media only screen and (max-width: 575px) {
+  .hero__mobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+.hero__lista {
+  margin: 20px 0px;
+}
+.hero__item {
+  font-size: 1rem;
+  color: #bcdaf4;
+  display: flex;
+  gap: 40px;
+}
+.hero__texto {
+  max-width: 486px;
+}
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+  .hero__texto {
+    max-width: 375px;
+  }
+}
+.hero__resume {
+  font-size: 1rem;
+  color: #bcdaf4;
+}
+.hero__button {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .hero__button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hero__link {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (max-width: 575px) {
+  .hero__link {
+    font-size: 0.875rem;
+  }
+}
+
+.assinar {
+  background-color: #bcdaf4;
+  color: #74b4ed;
+  padding: 15px 40px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 575px) {
+  .assinar {
+    text-align: center;
+  }
+}
+.assinar:hover {
+  background-color: #a2cbf0;
+}
+
+.trailer {
+  border: 2px solid #bcdaf4;
+  color: #bcdaf4;
+  padding: 15px 20px;
+}
+@media only screen and (max-width: 575px) {
+  .trailer {
+    text-align: center;
+  }
+}
+.trailer:hover {
+  border: 2px solid #e8f2fb;
+}
+
+.sinopse {
+  padding: 8vw;
+}
+.sinopse__container {
+  display: flex;
+  gap: 20px;
+}
+@media only screen and (max-width: 1067px) {
+  .sinopse__container {
+    display: block;
+  }
+}
+.sinopse__img {
+  flex: 0 0 320px;
+}
+.sinopse__img img {
+  border-radius: 10px;
+  width: 320px;
+}
+@media only screen and (max-width: 767px) {
+  .sinopse__img img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.sinopse__text p {
+  margin-top: 15px;
+}
+@media only screen and (max-width: 860px) {
+  .sinopse__text h2 {
+    font-size: 20px;
+  }
+}
+.sinopse__text__h2 {
+  color: #000;
+}
+
+.images {
+  margin-top: 400px;
+  margin-bottom: 50px;
+  padding: 0vw 4vw;
+}
+.images__lista {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.images__item img {
+  border-radius: 10px;
+  height: 380px;
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+.footer {
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+}
+.footer__container {
+  max-width: 100%;
+}
+@media only screen and (max-width: 575px) {
+  .footer img {
+    width: 100px;
+    margin: 20px 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #bcdaf4;
+  background: linear-gradient(#74b4ed, #74b4ed);
+}
+
+img {
+  max-width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal iframe {
+  border: none;
+}
+
+.slider__indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider__indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bcdaf4;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider__indicator.active {
+  background-color: #3f85c1;
+}
